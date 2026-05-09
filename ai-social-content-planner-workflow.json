@@ -1,0 +1,246 @@
+{
+  "name": "My workflow",
+  "nodes": [
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        0,
+        0
+      ],
+      "id": "57136db8-fbb4-4f56-8786-213abd9cbb4d",
+      "name": "Manual Trigger"
+    },
+    {
+      "parameters": {
+        "jsCode": "const contenuti = [\n  {\n    \"Titolo contenuto\": \"La Notte del Lancio\",\n    \"Canale\": \"Instagram\",\n    \"Target\": \"fan trap italiani 18-30\",\n    \"Obiettivo\": \"annunciare l'uscita del brano\",\n    \"Mood\": \"luxury urban\",\n    \"Tema\": \"hype, attesa e successo\",\n    \"Formato\": \"post singolo\"\n  },\n  {\n    \"Titolo contenuto\": \"Dietro la Banconota\",\n    \"Canale\": \"TikTok\",\n    \"Target\": \"fan trap e street culture\",\n    \"Obiettivo\": \"raccontare il concept della cover\",\n    \"Mood\": \"cinematic luxury\",\n    \"Tema\": \"immagine, soldi e identità\",\n    \"Formato\": \"video breve\"\n  },\n  {\n    \"Titolo contenuto\": \"Prima della Firma\",\n    \"Canale\": \"Instagram\",\n    \"Target\": \"nuovi ascoltatori trap\",\n    \"Obiettivo\": \"raccontare il percorso prima del successo\",\n    \"Mood\": \"raw urban\",\n    \"Tema\": \"sacrificio, fame e disciplina\",\n    \"Formato\": \"reel\"\n  },\n  {\n    \"Titolo contenuto\": \"Codice Milionario\",\n    \"Canale\": \"Instagram\",\n    \"Target\": \"fan già esistenti\",\n    \"Obiettivo\": \"spingere il pre-save\",\n    \"Mood\": \"confident luxury\",\n    \"Tema\": \"mentalità vincente e ambizione\",\n    \"Formato\": \"storia\"\n  },\n  {\n    \"Titolo contenuto\": \"Barre da Ricordare\",\n    \"Canale\": \"TikTok\",\n    \"Target\": \"pubblico giovane interessato a musica trap\",\n    \"Obiettivo\": \"far usare una punchline del brano\",\n    \"Mood\": \"viral energetic\",\n    \"Tema\": \"testo, punchline e identità\",\n    \"Formato\": \"video lyrics\"\n  },\n  {\n    \"Titolo contenuto\": \"Musica come Business\",\n    \"Canale\": \"LinkedIn\",\n    \"Target\": \"contatti professionali e creativi\",\n    \"Obiettivo\": \"raccontare il lato imprenditoriale del progetto\",\n    \"Mood\": \"professional storytelling\",\n    \"Tema\": \"arte, strategia e indipendenza\",\n    \"Formato\": \"post testuale\"\n  },\n  {\n    \"Titolo contenuto\": \"Lusso Sporco\",\n    \"Canale\": \"Instagram\",\n    \"Target\": \"fan di estetica urban\",\n    \"Obiettivo\": \"lanciare una visual identity forte\",\n    \"Mood\": \"dark luxury\",\n    \"Tema\": \"contrasto tra strada e successo\",\n    \"Formato\": \"post carosello\"\n  },\n  {\n    \"Titolo contenuto\": \"Frame da Milionario\",\n    \"Canale\": \"YouTube\",\n    \"Target\": \"ascoltatori interessati al videoclip\",\n    \"Obiettivo\": \"presentare il video ufficiale\",\n    \"Mood\": \"cinematic street\",\n    \"Tema\": \"narrazione visiva e status\",\n    \"Formato\": \"thumbnail\"\n  },\n  {\n    \"Titolo contenuto\": \"Quanto Vale un Sogno?\",\n    \"Canale\": \"Instagram\",\n    \"Target\": \"community musicale\",\n    \"Obiettivo\": \"coinvolgere il pubblico\",\n    \"Mood\": \"challenging urban\",\n    \"Tema\": \"ambizione, sacrificio e scelta personale\",\n    \"Formato\": \"post domanda\"\n  },\n  {\n    \"Titolo contenuto\": \"Una Barra, Una Storia\",\n    \"Canale\": \"TikTok\",\n    \"Target\": \"nuovi fan\",\n    \"Obiettivo\": \"far scoprire una barra forte del brano\",\n    \"Mood\": \"raw urban\",\n    \"Tema\": \"storytelling, testo e identità\",\n    \"Formato\": \"video lyrics\"\n  },\n  {\n    \"Titolo contenuto\": \"Backstage del Successo\",\n    \"Canale\": \"Instagram\",\n    \"Target\": \"fan trap italiani\",\n    \"Obiettivo\": \"annunciare backstage o shooting\",\n    \"Mood\": \"editorial urban\",\n    \"Tema\": \"preparazione, immagine e lavoro\",\n    \"Formato\": \"reel backstage\"\n  },\n  {\n    \"Titolo contenuto\": \"Il Primo Impatto\",\n    \"Canale\": \"Instagram\",\n    \"Target\": \"ascoltatori casual\",\n    \"Obiettivo\": \"trasformare curiosità in ascolti\",\n    \"Mood\": \"minimal luxury\",\n    \"Tema\": \"attenzione, estetica e prima impressione\",\n    \"Formato\": \"post singolo\"\n  },\n  {\n    \"Titolo contenuto\": \"Mentalità Young Millionaire\",\n    \"Canale\": \"TikTok\",\n    \"Target\": \"pubblico motivazionale\",\n    \"Obiettivo\": \"collegare il brano alla mentalità hustle\",\n    \"Mood\": \"motivational urban\",\n    \"Tema\": \"disciplina, fame e obiettivi\",\n    \"Formato\": \"video parlato\"\n  },\n  {\n    \"Titolo contenuto\": \"Cover Reveal\",\n    \"Canale\": \"Instagram\",\n    \"Target\": \"fan e nuovi follower\",\n    \"Obiettivo\": \"presentare la cover ufficiale\",\n    \"Mood\": \"premium cinematic\",\n    \"Tema\": \"immagine, status e ambizione\",\n    \"Formato\": \"post cover\"\n  },\n  {\n    \"Titolo contenuto\": \"Estate da Milionario\",\n    \"Canale\": \"Instagram\",\n    \"Target\": \"pubblico fashion/urban\",\n    \"Obiettivo\": \"creare contenuto estetico legato al brano\",\n    \"Mood\": \"summer urban luxury\",\n    \"Tema\": \"stile, presenza e riconoscibilità\",\n    \"Formato\": \"foto editoriale\"\n  }\n];\n\n// Per test iniziale usiamo solo i primi 3.\n// Dopo, cambia 3 in 15.\nconst LIMIT = 3;\n\nreturn contenuti.slice(0, LIMIT).map(contenuto => ({\n  json: contenuto\n}));"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        208,
+        0
+      ],
+      "id": "eae0a238-33a5-4944-aa37-8cdcf3a107e4",
+      "name": "Input Contenuto"
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 3,
+      "position": [
+        416,
+        16
+      ],
+      "id": "bda2bb22-039f-4bab-b055-1557b0ca267b",
+      "name": "Loop Idee"
+    },
+    {
+      "parameters": {
+        "jsCode": "const items = $input.all();\n\nreturn items.map(item => {\n  const data = item.json;\n\n  const prompt = `\nRispondi solo con JSON valido, senza markdown e senza spiegazioni.\nSei un AI Social Content Strategist per artisti musicali e creator.\nAnalizza questo contenuto social e genera output utili per una campagna professionale.\n\nDati contenuto:\nTitolo contenuto: ${data[\"Titolo contenuto\"]}\nCanale: ${data[\"Canale\"]}\nTarget: ${data[\"Target\"]}\nObiettivo: ${data[\"Obiettivo\"]}\nMood: ${data[\"Mood\"]}\nTema: ${data[\"Tema\"]}\nFormato: ${data[\"Formato\"]}\n\nEsempio di stile desiderato:\nHook: \"La notte in cui cambia tutto\"\nCaption: \"Un contenuto pensato per trasformare l’attesa in identità: visual forte, tono premium e messaggio diretto per presentare il brano come un momento, non solo come un’uscita.\"\nCTA: \"Ascoltalo appena esce.\"\n\nRestituisci esattamente questo JSON:\n{\n  \"hook\": \"\",\n  \"caption\": \"\",\n  \"cta\": \"\",\n  \"idea_visual\": \"\",\n  \"prompt_immagine\": \"\",\n  \"priorita_contenuto\": \"\",\n  \"motivazione_priorita\": \"\"\n}\n\nRegole:\n- Scrivi in italiano naturale, credibile e professionale\n- Non usare emoji\n- Non usare hashtag\n- Non usare punti esclamativi eccessivi\n- Hook massimo 10 parole\n- Caption massimo 350 caratteri\n- CTA massimo 12 parole\n- Tono: urban, premium, diretto, credibile\n- Evita frasi cringe, motivazionali generiche o troppo aggressive\n- Evita parole come: bomba, spacca, non perderti, incredibile, successo assicurato\n- idea_visual deve essere concreta e realizzabile per uno shooting o post social\n- prompt_immagine deve essere in inglese, fotografico/cinematografico, senza testo scritto nell'immagine\n- priorita_contenuto può essere solo Alta, Media o Bassa\n- motivazione_priorita massimo 1 frase\n`;\n\n  return {\n    json: {\n      ...data,\n      ollamaBody: {\n        model: \"mistral:7b\",\n        prompt,\n        stream: false,\n        format: \"json\"\n      }\n    }\n  };\n});"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        624,
+        48
+      ],
+      "id": "ce5ea0ee-4460-4b65-8d5e-2df96f6bafb4",
+      "name": "Prepara Prompt AI"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "http://host.docker.internal:11434/api/generate",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ $json.ollamaBody }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.4,
+      "position": [
+        832,
+        0
+      ],
+      "id": "a0a1a026-c406-4c47-9809-6522a57f720c",
+      "name": "Ollama AI"
+    },
+    {
+      "parameters": {
+        "jsCode": "const rawResponse = $input.first().json.response;\n\nif (!rawResponse) {\n  throw new Error(\"Non trovo il campo response. Controlla che questo nodo sia collegato dopo HTTP Request.\");\n}\n\nlet parsed;\n\ntry {\n  parsed = JSON.parse(rawResponse);\n} catch (error) {\n  throw new Error(\"La risposta di Ollama non è JSON valido: \" + rawResponse);\n}\n\nreturn [\n  {\n    json: {\n      Hook: parsed.hook || \"\",\n      Caption: parsed.caption || \"\",\n      CTA: parsed.cta || \"\",\n      \"Idea visual\": parsed.idea_visual || \"\",\n      \"Prompt immagine\": parsed.prompt_immagine || \"\",\n      \"Priorità contenuto\": parsed.priorita_contenuto || \"\",\n      \"Motivazione priorità\": parsed.motivazione_priorita || \"\",\n      Stato: \"Da revisionare\"\n    }\n  }\n];"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1040,
+        32
+      ],
+      "id": "63677a6c-a5e0-423f-93ca-f2e1114937f3",
+      "name": "Pulisci Output JSON"
+    },
+    {
+      "parameters": {
+        "jsCode": "const generatedItems = $input.all();\n\nlet message = '✅ PIANO EDITORIALE GENERATO\\n\\n';\n\ngeneratedItems.forEach((item, index) => {\n  const data = item.json;\n\n  message += `CONTENUTO ${index + 1}\\n`;\n  message += `Hook: ${data.Hook || ''}\\n\\n`;\n  message += `Caption: ${data.Caption || ''}\\n\\n`;\n  message += `CTA: ${data.CTA || ''}\\n\\n`;\n  message += `Idea visual: ${data[\"Idea visual\"] || ''}\\n\\n`;\n  message += `Prompt immagine: ${data[\"Prompt immagine\"] || ''}\\n\\n`;\n  message += `Priorità: ${data[\"Priorità contenuto\"] || ''}\\n`;\n  message += `Motivazione: ${data[\"Motivazione priorità\"] || ''}\\n`;\n  message += `Stato: ${data.Stato || 'Da revisionare'}\\n`;\n  message += `\\n-------------------------\\n\\n`;\n});\n\nreturn [\n  {\n    json: {\n      messaggio_finale: message\n    }\n  }\n];"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1104,
+        -192
+      ],
+      "id": "6bbd72d2-6511-418f-bba5-9abc94e13abc",
+      "name": "Crea Report Finale"
+    },
+    {
+      "parameters": {
+        "jsCode": "const message = $input.first().json.messaggio_finale || '';\n\nconst html = `\n<!DOCTYPE html>\n<html lang=\"it\">\n<head>\n  <meta charset=\"UTF-8\">\n  <title>Piano Editoriale AI</title>\n</head>\n<body style=\"\n  margin: 0;\n  padding: 0;\n  background: #ffffff;\n  color: #111111;\n  font-family: Arial, sans-serif;\n\">\n\n  <div style=\"\n    max-width: 900px;\n    margin: 0 auto;\n    padding: 40px;\n    background: #ffffff;\n    color: #111111;\n    line-height: 1.6;\n  \">\n\n    <h1 style=\"\n      color: #111111;\n      border-bottom: 2px solid #111111;\n      padding-bottom: 12px;\n    \">\n      Piano Editoriale AI\n    </h1>\n\n    <pre style=\"\n      white-space: pre-wrap;\n      word-wrap: break-word;\n      background: #f5f5f5;\n      color: #111111;\n      padding: 24px;\n      border-radius: 8px;\n      border: 1px solid #dddddd;\n      font-size: 15px;\n      line-height: 1.6;\n      font-family: Arial, sans-serif;\n    \">${message}</pre>\n\n  </div>\n\n</body>\n</html>\n`;\n\nreturn [\n  {\n    json: {\n      html_finale: html\n    }\n  }\n];"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1312,
+        -192
+      ],
+      "id": "21a77544-8f39-4d77-b981-ca13ff7b043c",
+      "name": "Cream Email HTML"
+    },
+    {
+      "parameters": {
+        "fromEmail": "flavio.laloni@gmail.com",
+        "toEmail": "kayler.infobooking@gmail.com",
+        "subject": "Piano editoriale AI ",
+        "html": "={{ $json.html_finale }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.emailSend",
+      "typeVersion": 2.1,
+      "position": [
+        1520,
+        -192
+      ],
+      "id": "08f71b41-964c-4647-921a-1235931e18e5",
+      "name": "Invia Email",
+      "webhookId": "0eb88bdb-86e1-4be0-8d73-7ead9d6382d4",
+      "credentials": {
+        "smtp": {
+          "id": "0exbWU7a5JfuUiTG",
+          "name": "SMTP account"
+        }
+      }
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Manual Trigger": {
+      "main": [
+        [
+          {
+            "node": "Input Contenuto",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Input Contenuto": {
+      "main": [
+        [
+          {
+            "node": "Loop Idee",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Loop Idee": {
+      "main": [
+        [
+          {
+            "node": "Crea Report Finale",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Prepara Prompt AI",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Prepara Prompt AI": {
+      "main": [
+        [
+          {
+            "node": "Ollama AI",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Ollama AI": {
+      "main": [
+        [
+          {
+            "node": "Pulisci Output JSON",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Pulisci Output JSON": {
+      "main": [
+        [
+          {
+            "node": "Loop Idee",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Crea Report Finale": {
+      "main": [
+        [
+          {
+            "node": "Cream Email HTML",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Cream Email HTML": {
+      "main": [
+        [
+          {
+            "node": "Invia Email",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate"
+  },
+  "versionId": "65cca961-a63a-46f2-b4b8-e4e785304ed8",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "0413c443b5903d2bf571b9c9a5dcee0aec41bf951eba7c9464ba9820df101c42"
+  },
+  "id": "p2oLrl8OJF0mbxx9",
+  "tags": []
+}
