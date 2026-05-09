@@ -1,3 +1,4 @@
-<img width="2559" height="1439" alt="Screenshot 2026-05-08 231611" src="https://github.com/user-attachments/assets/d2f2790a-0006-41e3-9b05-09c84857a610" />
+<img width="2475" height="1232" alt="ScreenMVPaiSocial" src="https://github.com/user-attachments/assets/7a6fa175-8cff-4366-900a-adcd0c1f9b19" />
+
 # ai-social-content-planner-n8n
 AI automation MVP built with n8n, Docker and Ollama to generate structured editorial plans and send them via email.
